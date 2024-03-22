@@ -1,0 +1,47 @@
+@startuml ERD
+class Artist {
+    Artist Name
+    Hourly Rate
+    Instagram At
+    First Name
+    Last Name
+    Phone Number
+    Email Address
+
+}
+class Shop {
+    Name
+    Owner
+    Owner Email Address
+    Country
+    City
+    Address
+}
+class Tattoo {
+    Likeness
+    Dimensions
+    Body Placement
+}
+class Article {
+    Article Name
+    Author
+    Topic
+    Date published
+}
+class Style {
+    Style Name
+    Desription
+    Culture/Country origin
+}
+
+Artist "*" -- "1" Shop
+Artist "1" -- "*" Tattoo
+Artist "*" -- "*" Style
+
+
+
+
+
+
+
+@enduml
